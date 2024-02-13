@@ -22,7 +22,7 @@ class GenderSelectionWidget extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
           FaIcon(isMale ? FontAwesomeIcons.mars : FontAwesomeIcons.venus, color : Colors.white, size : 60),
-          Text(isMale ?"Male":"Female",style:TitleTextStyle,),
+          Text(isMale ?"Male":"Female",style:titleTextStyle,),
         ],
       ),
       width : width * 0.47,

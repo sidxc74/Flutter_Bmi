@@ -24,8 +24,8 @@ class ChangeButtons extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              Text("$txt",style:TitleTextStyle,),
-              Text("$inc",style:TitleTextStyle,),
+              Text("$txt",style:titleTextStyle,),
+              Text("$inc",style:titleTextStyle,),
               Row(
     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
     children: [
@@ -61,8 +61,8 @@ class ChangeButtons extends StatelessWidget {
               )
             ],
           ),
-          width : width * 0.40,
-          height : width * 0.40,
+          width : width * 0.42,
+          height : width * 0.35,
           decoration: BoxDecoration(
             color : cardColor,
             borderRadius: BorderRadius.circular(10)
