@@ -31,13 +31,14 @@ class _MyWidgetState extends State<BmiCalculatorScreen> {
         backgroundColor: backgroundColor,
       ),
       body : Column(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         // mainAxisAlignment: ,
         children: [
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            GenderSelectionWidget(width: width),
-            GenderSelectionWidget(width: width),       
+            GenderSelectionWidget(width: width, isMale: true,),
+            GenderSelectionWidget(width: width, isMale: false,),       
           ],
         )
       ],)

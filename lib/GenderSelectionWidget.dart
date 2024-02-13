@@ -6,10 +6,11 @@ class GenderSelectionWidget extends StatelessWidget {
   const GenderSelectionWidget({
     super.key,
     required this.width,
+    required this.isMale,
   });
 
   final double width;
-  final String title;
+  final bool isMale;
 
   @override
   Widget build(BuildContext context) {
@@ -17,8 +18,8 @@ class GenderSelectionWidget extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
-          FaIcon(FontAwesomeIcons.mars, color : Colors.white, size : 60),
-          Text("Male",style: TextStyle(
+          FaIcon(isMale ? FontAwesomeIcons.mars : FontAwesomeIcons.venus, color : Colors.white, size : 60),
+          Text(isMale ?"Male":"Female",style: TextStyle(
             color : Colors.white,
             fontSize: 24,
             fontWeight: FontWeight.w500,
